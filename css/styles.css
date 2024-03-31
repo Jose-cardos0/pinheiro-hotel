@@ -1,0 +1,340 @@
+/*reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arimo;
+}
+
+body {
+    background-color: black;
+    width: 1440px;
+    height: 1834px;
+    display: flexs;
+    margin: 0 auto;
+}
+
+/* paleta de cores*/
+:root {
+    --cor-branco: #fff;
+    --cor-texto: #eeeeee;
+    --cor-dourado: #fcd582;
+    --cor-verde: #368429;
+}
+
+.container-geral {
+    max-width: 1440px;
+    height: 1834px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+}
+
+
+nav {
+    width: 140px;
+    margin-left: 50px;
+    margin-top: 15px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+a {
+    margin-top: 15px;
+    color: var(--cor-branco);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: transform 0.3s ease;
+    
+}
+
+a:hover {
+    transform: scale(1.3);
+    color: var(--cor-dourado);
+    
+}
+
+/* estilo para o logomarca */
+#backgraund {
+    display: flex;
+    height: 300px;
+    margin: 0 auto;
+    transition: transform 0.2s ease;
+}
+
+
+.nav-bar{
+    background: linear-gradient(45deg, #03a10b, #0f7402, #fad0c4, #015f16, #03b151, #056d13, #19a714, #0ca32d, #22c1c3);
+    background-size: 400% 400%;
+    animation: gradient-animation 10s ease infinite;
+    height: 380px;
+}
+
+@keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+
+
+/* Estilo base para o o main */
+main{
+    background-color: var(--cor-branco);
+    display: flex;
+    flex-direction: column;
+
+    h1,h2{
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    .buttons{
+        width: 250px;
+        display: flex;
+        position: relative;
+        margin-top: -16px;
+        margin-left: 30px;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+
+
+}
+
+/* Estilo base para o botão */
+.awesome-button {
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #4CAF50;
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    outline: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Texto */
+.awesome-button span:first-child {
+    transition: transform 0.3s ease;
+}
+
+/* Ícone */
+.awesome-button .icon {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Shine effect */
+.awesome-button .shine {
+    position: absolute;
+    top: -1%;
+    left: -100%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 254, 254, 0.185);
+    transform: rotate(45deg);
+    transition: top 0.5s ease, left 0.5s ease;
+}
+
+/* Efeito de hover no botão */
+.awesome-button:hover {
+    background-color: #155318;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Efeito de foco */
+.awesome-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 112, 55, 0.4);
+}
+
+/* Efeito de clique */
+.awesome-button:active {
+    transform: translateY(2px);
+}
+
+
+/* Efeito de hover no ícone */
+.awesome-button:hover .icon {
+    transform: translateX(5px);
+}
+
+/* Efeito de hover no brilho */
+.awesome-button:hover .shine {
+    top: -20%;
+    left: -20%;
+}
+
+
+/*INFORMATIONS-CONTAINER*/
+.informations-container0 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 772px;
+    margin-left: -100px;
+}
+
+.informations-text {
+    width: 720px;
+    height: 440px;
+    margin-top: -150px;
+
+
+    h3 {
+        font-size: 96px;
+        font-weight: bold;
+        line-height:50px;
+    }
+
+    span {
+        font-size: 64px;
+    }
+
+    p {
+        margin-top: 20px;
+        text-align: justify;
+    }
+    
+}
+
+
+/*GLIDER*/
+.informations-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 113px;
+
+    
+    h2 {
+       font-weight: bold;
+       font-size: 48px;
+       font-family: Arimo;
+       margin-bottom: 30px;
+    }
+}
+
+
+
+.gallery-master {
+    position: relative;
+
+    .img1 {
+        width: 180px;
+        position: relative;
+        margin-right: -50px;
+        z-index: 0;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    .img2 {
+        width: 200px;
+        position: relative;
+        margin: 10px;
+        z-index: 1;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    .img3 {
+        width: 180px;
+        position: relative;
+        margin-left: -50px;
+        z-index: 0;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+
+
+    .img1:hover{ 
+        transform: scale(1.3);
+        z-index: 3;
+    }
+
+    .img2:hover{ 
+        transform: scale(1.3);
+        z-index: 3;
+    }
+
+    .img3:hover{ 
+        transform: scale(1.3);
+        z-index: 3;
+    }
+
+}
+
+/*FOOTER*/
+
+footer {
+    height: 645px;
+    background-color: var(--cor-branco);
+    background-image: url(/img/footer.png);
+    background-size: cover;
+
+    .mapa{
+        width: 1440px;
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .localization {
+        display: flex;
+        justify-content: flex-end;
+        h1 {
+            width: 750px;
+            padding: 20px;
+            margin-bottom: 35px;
+            background-color: var(--cor-verde);
+            color: var(--cor-branco);
+        }
+    }
+
+
+    .endereco{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .mapa-visu{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    p{
+        font-size: 20px;
+        width: 750px;
+    }
+
+    span{
+        font-weight: bold;
+    }
+
+
+
+}
+
