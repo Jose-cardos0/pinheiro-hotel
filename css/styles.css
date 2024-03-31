@@ -338,3 +338,185 @@ footer {
 
 }
 
+/*responsividade*/
+@media screen and (max-width: 2560px ){
+    body{
+        margin-top: -15px;
+    }
+    footer{
+        margin-top: -1px;
+    }
+}
+
+
+@media screen and (max-width: 1440px ){
+    body{
+        margin-top: -15px;
+    }
+}
+
+
+@media screen and (max-width: 1024px ){
+    body{
+        margin-top: -14px;
+    }
+    footer{
+        margin-top: -1px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    footer{
+        margin-top: -1px;
+    }
+
+    .awesome-button{
+        font-size: 30px;
+        padding: 8px 120px;
+        
+    }
+
+    #btn1{
+        margin-right: 10px;
+    }
+}
+
+@media screen and (max-width: 425px){
+    body{
+       margin-top: -14px;
+       background-color: var(--cor-branco);
+    }
+
+    .informations-container0{
+        display: flex;
+        flex-direction: column;
+        height: 1800px;
+    }
+
+    .informations1{
+        margin-top: -15px;
+    }
+
+
+    .awesome-button{
+        font-size: 40px;
+        padding: 8px 150px;
+        
+    }
+
+    #btn1{
+        margin-right: 10px;
+    }
+
+    .informations-container{
+        margin-top: -650px;
+        width: 100%;
+        display: flex;
+
+        br{
+            display: none;
+        }
+
+        h2{
+            margin-top: 100px;
+            font-size: 60px;
+        }
+
+
+        .img1{
+            height: 400px;
+            width: auto;
+        }
+
+        .img2{
+            height: 450px;
+            width: auto;
+        }
+
+        .img3{
+            height: 400px;
+            width: auto;
+        }
+    }
+
+    .informations-text{
+        margin: 300px 0px 0px 90px;
+        width: 80%;
+        
+        h3{
+            font-size: 200px;
+        }
+
+        p{
+            font-size: 30px;
+        }
+    }
+
+
+    .container-geral{
+        height: 849px;
+    }
+
+    footer{
+        margin-top: 68px;
+
+        .endereco{
+            
+            p{
+                font-size: 30px;
+            }
+        }
+
+        .localization{
+            margin-bottom: -35px;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 375px){ 
+    .informations-container0{
+        margin-top: 200px;
+    }
+
+    footer{
+        margin-top: 250px;
+    }
+
+}
+
+@media screen and (max-width: 320px){ 
+
+    body{
+        max-width: 1280px;
+    }
+
+    footer{
+        margin-top: 437px;
+    }
+
+    .mapa {
+        display: flex;
+        max-width: 1280px;
+        
+        .localization, .endereco, .mapa-visu{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+    }
+
+    .localization{
+        margin-top: -50px;
+    }
+
+    .informations-text{
+        h3{
+            font-size: 180px;
+        }
+    }
+
+
+}
+
